@@ -1,0 +1,6 @@
+1. What happens when you initialize a repository? Why do you need to do it?
+	- When initializing a repository: no commits found when using git log
+	- Need to do it to create .git directory which will keep track of history of commits
+2. How is the staging area different from the working directory and the repository? What value do you think it offers?
+	- Staging area is between working directory and repository
+	- It offers the temporary storage so that users can control the commit process
