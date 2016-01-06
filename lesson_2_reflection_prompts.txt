@@ -4,3 +4,21 @@
 2. How is the staging area different from the working directory and the repository? What value do you think it offers?
 	- Staging area is between working directory and repository
 	- It offers the temporary storage so that users can control the commit process
+3. How can you use the staging area to make sure you have one commit per logical change?
+	I can add changed file to staging area combined with git diff and git status to make sure there is only 1 logical change
+	Useful command:
+	  + git diff: compare working directory and staging area
+	  + git diff --staged: compare staging area and repository (most recent commit)
+	  + git diff commit1 commit2: compare 2 commits
+4. What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+	- Branches are useful when you need some experimental work without change the master branch
+	- useful command: 
+	  + git branch: check current branch
+	  + git branch branch_name: create branch_name branch
+	  + git checkout branch_name: check out branch_name branch. commit from now on will be on this branch
+5. What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	- contain the result of changes in both branches ---> using git merge branch1 branch2
+	- if some conflicts occur: use git merge --abort to reset the changed files to the state before merging
+	- useful command:
+	  + git show commit_id: show difference between the commit and its parent
+	  + git log --graph: draw the graph of repository
